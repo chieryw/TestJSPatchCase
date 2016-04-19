@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F18b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-rd-od1">
+                                <rect key="frame" x="120" y="120" width="360" height="30"/>
+                                <state key="normal" title="循环请求"/>
+                                <connections>
+                                    <action selector="firstAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEY-S1-BQd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0X-wU-f9v">
+                                <rect key="frame" x="120" y="250" width="360" height="30"/>
+                                <state key="normal" title="点击请求"/>
+                                <connections>
+                                    <action selector="secondAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PnP-Yw-1Q4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="U0X-wU-f9v" secondAttribute="trailing" constant="100" id="3HK-Hn-4bi"/>
+                            <constraint firstItem="U0X-wU-f9v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="FwI-aS-5XP"/>
+                            <constraint firstItem="U0X-wU-f9v" firstAttribute="top" secondItem="5Rc-rd-od1" secondAttribute="bottom" constant="100" id="GUE-rM-c4D"/>
+                            <constraint firstItem="5Rc-rd-od1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="HQn-3m-s1H"/>
+                            <constraint firstItem="U0X-wU-f9v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPf-r1-c2Y"/>
+                            <constraint firstItem="5Rc-rd-od1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="ctZ-V6-oAs"/>
+                            <constraint firstItem="5Rc-rd-od1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pDg-7C-oJg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Rc-rd-od1" secondAttribute="trailing" constant="100" id="st4-zy-gFT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
